@@ -2,32 +2,61 @@
 
 <html>
     <head>
-
+        <title>Global Food Bank</title>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width", initial-scale="1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet"> 
+        <style>
+            body {
+                text-align: center;
+            }
+        </style>
     </head>
     <body>
-        <h1>Global Food Bank</h1>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="get_involved.html">Get Involved</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="facts.html">Facts</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="legal.html">Legal</a></li>
-        </ul>
-        <h2>Healthier Food, Healthy Families, Happier World</h2>
-        <p>Your support helps put food on the table for families in need in our own communities and for many around the world. A gift of even $25 could make a difference!</p>
-        <h3>Give now, and support a brighter future, in a world free of hunger</h3>
-        <h3>With GFB, there are many ways to get involved and make an impact</h3> <a href="get_involved.html">Get involved!</a>
+        <nav id="content-desktop" class="topbar">
+            <a href="index.html" class="title" style="font-size: 24px;">GLOBAL FOOD BANK</a>
+            <a href="legal.html" class="bar-button">LEGAL</a>
+            <a href="contact.html" class="bar-button">CONTACT US</a>
+            <a href="about.html" class="bar-button">ABOUT US</a>
+            <a href="facts.html" class="bar-button">FACTS</a>
+            <a href="gallery.html" class="bar-button">GALLERY</a>
+            <a href="get_involved.html" class="bar-button">GET INVOLVED</a>
+        </nav>
+        <nav id="content-mobile" class="topbar">
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger"/>
+            <a href="index.html" class="title">GLOBAL FOOD BANK</a>
+
+            <div id="items">
+                <a href="legal.html" class="bar-button">LEGAL</a>
+                <a href="contact.html" class="bar-button">CONTACT US</a>
+                <a href="about.html" class="bar-button">ABOUT US</a>
+                <a href="facts.html" class="bar-button">FACTS</a>
+                <a href="gallery.html" class="bar-button">GALLERY</a>
+                <a href="get_involved.html" class="bar-button">GET INVOLVED</a>
+            </div>
+        </nav>
+        <img src="../images/food_bank_img_3.jpeg" alt="alttext" class="under-nav banner">
+        <h1>Healthier Food, Healthy Families, Happier World</h1>
+        <h4>Your support helps put food on the table for families in need in our own communities and for many around the world. A gift of even $25 could make a difference!</h4>
+        <h4>Give now, and support a brighter future, in a world free of hunger</h4>
+        <hr>
+        <h3>With GFB, there are many ways to get involved and make an impact</h3> 
+        <a class="page-button" href="get_involved.html">Get involved!</a>
         <h3>Over 100+ Million meals given to those in need</h3>
         <h3>"Connecting with my local community and giving back has been a spectacular experience as a volunteer” -Vincent Beans</h3>
+        <hr>
         <h3>Subscribe to the newsletter</h3>
-        <a href="https://www.bbc.com/">GFB in the news</a>
-        <h3>Our Events</h3>
-        <ul>
-            <li>Join us on 11/06 for our Global Giving Day. Help meet our goals to provide more meals than ever before!</li>
-            <li>Listen to our founders John and Jane Doe as they give a quarterly update on the effect that we’ve been able to have around the world. <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Watch here</a></li>
-            <li>Get in touch with our leaders to schedule a food packing event in your community!</li>
-        </ul>
+        <a class="page-button" href="https://www.bbc.com/">GFB in the news</a>
+        <hr>
+        <h2>Our Events</h2>
+        <h3>Join us on 11/06 for our Global Giving Day. Help meet our goals to provide more meals than ever before!</h3>
+        <h3>Listen to our founders John and Jane Doe as they give a quarterly update on the effect that we’ve been able to have around the world.</h3>
+        <a class="page-button" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Watch here</a>
+        <h3 class="above-footer">Get in touch with our leaders to schedule a food packing event in your community!</h3>
+        <div class="footer">&copy; 2021 Global Food Bank is a 501(c)(3) non-profit organization.</div>
     </body>
 </html>
