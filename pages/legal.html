@@ -1,17 +1,40 @@
+<!DOCTYPE HTML>
 <html>
-    <head></head>
+    <head>
+        <title>Global Food Bank</title>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width", initial-scale="1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet"> 
+    </head>
     <body>
-        <h1>Global Food Bank</h1>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="get_involved.html">Get Involved</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="facts.html">Facts</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="legal.html">Legal</a></li>
-        </ul>
-        <h2>Healthier Food, Healthy Families, Happier World</h2>
+        <nav id="content-desktop" class="topbar">
+            <a href="index.html" class="title" style="font-size: 24px;">GLOBAL FOOD BANK</a>
+            <a href="legal.html" class="bar-button">LEGAL</a>
+            <a href="contact.html" class="bar-button">CONTACT US</a>
+            <a href="about.html" class="bar-button">ABOUT US</a>
+            <a href="facts.html" class="bar-button">FACTS</a>
+            <a href="gallery.html" class="bar-button">GALLERY</a>
+            <a href="get_involved.html" class="bar-button">GET INVOLVED</a>
+        </nav>
+        <nav id="content-mobile" class="topbar">
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger"/>
+            <a href="index.html" class="title">GLOBAL FOOD BANK</a>
+
+            <div id="items">
+                <a href="legal.html" class="bar-button">LEGAL</a>
+                <a href="contact.html" class="bar-button">CONTACT US</a>
+                <a href="about.html" class="bar-button">ABOUT US</a>
+                <a href="facts.html" class="bar-button">FACTS</a>
+                <a href="gallery.html" class="bar-button">GALLERY</a>
+                <a href="get_involved.html" class="bar-button">GET INVOLVED</a>
+            </div>
+        </nav>
+
+        <h1>Healthier Food, Healthy Families, Happier World</h1>
         <p>© 2021 Global Food Bank is not a 501(c)(3) non-profit organization, 
             because it doesn’t actually exist. This organization was created as a 
             midterm project for the CS-20 Web Programming Class at Tufts University. 
@@ -28,5 +51,7 @@
             would you try to contact him? If you send anything to the above email, 
             I have no idea who will receive it. So go wild, but don’t say I didn’t warn you.
         </p>
+
+        <div class="footer">&copy; 2021 Global Food Bank is a 501(c)(3) non-profit organization.</div>
     </body>
 </html>
