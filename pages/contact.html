@@ -13,6 +13,7 @@
         <nav id="content-desktop" class="topbar">
             <a href="index.html" class="title" style="font-size: 24px;">GLOBAL FOOD BANK</a>
             <a href="legal.html" class="bar-button">LEGAL</a>
+            <a href="mapPage/mapPage.html" class="bar-button">LOCATIONS</a>
             <a href="contact.html" class="bar-button">CONTACT US</a>
             <a href="about.html" class="bar-button">ABOUT US</a>
             <a href="facts.html" class="bar-button">FACTS</a>
@@ -26,6 +27,7 @@
 
             <div id="items">
                 <a href="legal.html" class="bar-button">LEGAL</a>
+                <a href="mapPage/mapPage.html" class="bar-button">LOCATIONS</a>
                 <a href="contact.html" class="bar-button">CONTACT US</a>
                 <a href="about.html" class="bar-button">ABOUT US</a>
                 <a href="facts.html" class="bar-button">FACTS</a>
@@ -39,74 +41,77 @@
             <h1> Get in contact with us!</h1>
             <form id="survey-form">
 
-              <label for="name" id="name-label"> Name </label>
-              <input id="name"  placeholder="Your Name" required> </input>
-              <br>
+              <p><label for="name" id="name-label">Name:</label>
+              <input id="name"  placeholder="Your Name" required></input></p>
 
-              <label for="email" id="email-label"> Email </label>
-              <input id="email"  placeholder="youremail@domain.com" required> </input>
-              <br>
+              <p><label for="email" id="email-label">Email:</label>
+              <input id="email"  placeholder="youremail@domain.com" required></input></p>
+              
 
-              <label for="phoneNum" id="phoneNum-label"> Phone </label>
-              <input id="phoneNum"  placeholder="617 919 1032" required> </input>
-              <br>
+              <p><label for="phoneNum" id="phoneNum-label">Phone:</label>
+              <input id="phoneNum"  placeholder="617 919 1032" required></input></p>
 
-              <label for="dropdown" id="amount"> Inquiry Type </label>
+              <p><label for="dropdown" id="amount">Inquiry Type:</label>
               <select id="dropdown">
                 <option value="opt1"> Host Food Bank Location </option>
                 <option value="opt2"> Provide Financial Support  </option>
                 <option value="opt3"> Provide Staffing Support </option>
                 <option value="opt4"> General Query </option>
-              </select>
-              <br>
-              <br>
+              </select></p>
 
-
-            <label id="textarea"> <b> Message </b> </label>
-              <br>
-            <textarea id="textarea" name="extr comments" rows="5" class="textbox">
-            </textarea>
+              <p><label id="textarea">Message:</label>
+              <textarea id="textarea" name="extr comments" rows="5" class="textbox">
+              </textarea></p>
               <br>
 
-            <input id="submit" type="submit" value="Submit" class="submit-button">
-
+              <input id="submit" type="submit" value="Submit" class="submit-button">
             </form>
-            
         </div>
-
       <div class="footer">&copy; 2021 Global Food Bank is a 501(c)(3) non-profit organization.</div>
-
 <style>
 
 h1 {
-text-align: center;
+  text-align: center;
 }
 
-div.maincontent{
-      padding: 20px;
-      display: block;
-      height: 90vh;
-      background-color: cadetblue;
-      object-fit: contain;
-      overflow: hidden;
-    }
-
-.textbox{
-    width:100%;
-    height: 200px;
+label {
+  display: table-cell;
+  vertical-align: top;
 }
 
-form{
-  background: lightblue;
+input {
+  display: table-cell;
+}
+
+p {
+  display: table-row;
+}
+
+div.maincontent {
+  padding: 20px;
+  display: block;
+  height: 90vh;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+.textbox {
+  width:100%;
+  height: 200px;
+}
+
+form {
+  background: rgb(241, 230, 163);
   padding: 2.5rem 2.5rem;
-  border-radius: 2rem;
+  border-radius: 8px;
   width:500px;
   margin: auto;
   text-align: left;
+  display: table;
 }
 
 input.submit-button {
-  width:100%;
+  width: 100%;
   padding: 0.75rem;
 }
 

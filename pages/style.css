@@ -2,6 +2,10 @@ body,h1,h2,h3,h4,h5,h6 {
     font-family: 'Montserrat', sans-serif;
 }
 
+body {
+    background-color: aliceblue;
+}
+
 h1, h2 {
     color: #30470c;
 }
@@ -81,11 +85,13 @@ a {
     padding: 10px;
     color: white
 }
+
 #items { display: none; }
 #items a { 
     width: 100%;
     font-size: 14px;
  }
+
 #content-desktop a { font-size: 24px; }
 #content-mobile input { display: none; }
 #content-mobile input:checked ~ #items { display: block } 
