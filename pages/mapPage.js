@@ -5,7 +5,6 @@ function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
     center: { lat: 42.352271, lng: -71.05524200000001 },
     zoom: 15,
-    gestureHandling: "greedy";
   });
 
   let user_lat;
@@ -60,3 +59,4 @@ function initMap() {
 
 
 //Will reformat this to be much nicer later on, for now this is my MVP (minimum viable product)
+
