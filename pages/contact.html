@@ -38,7 +38,7 @@
 
         <div class="maincontent under-nav">
             <h1> Get in contact with us!</h1>
-            <form id="survey-form" name = "contact" method="post" onsubmit="return validate()">
+            <form id="survey-form" name = "contact" method="post" onsubmit="return false">
 
               <p><label for="name" id="name-label">Name:</label>
               <input id="name"  name="name" placeholder="Your Name"></input><div id="errName" class="errMsg">Name is required</div></p>
@@ -59,11 +59,11 @@
               </select></p>
 
               <p><label id="textarea">Message:</label>
-              <textarea id="textarea" name="extr comments" name = "message" rows="5" class="textbox">
+              <textarea id="textarea" name = "message" rows="5" class="textbox">
               </textarea><div id="errMessage" class="errMsg">Message is required</div></p>
               <br>
 
-              <input id="submit" type="submit" value="Submit" class="submit-button">
+              <input id="submit" type="submit" value="Submit" class="submit-button" onclick="validate()">
             </form>
         </div>
       <div class="footer">&copy; 2021 Global Food Bank is a 501(c)(3) non-profit organization.</div>
@@ -90,11 +90,11 @@
               email.focus();
               err=true;
             }
-            if (phone.value=="")
+            if (phoneNum.value=="")
             {
               console.log("phone");
               document.getElementById("errPhone").style.display = "inline-block";
-              phone.focus();
+              phoneNum.focus();
               err=true;
             }
             if (message.value=="")
