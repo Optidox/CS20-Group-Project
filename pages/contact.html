@@ -38,17 +38,17 @@
 
         <div class="maincontent under-nav">
             <h1> Get in contact with us!</h1>
-            <form id="survey-form">
+            <form id="survey-form" name = "contact" method="post" onsubmit="return validate()">
 
               <p><label for="name" id="name-label">Name:</label>
-              <input id="name"  placeholder="Your Name" required></input></p>
+              <input id="name"  name="name" placeholder="Your Name"></input><div id="errName" class="errMsg">Name is required</div></p>
 
               <p><label for="email" id="email-label">Email:</label>
-              <input id="email"  placeholder="youremail@domain.com" required></input></p>
+              <input id="email"  name = "email" placeholder="youremail@domain.com"></input><div id="errEmail" class="errMsg">Email is required</div></p>
               
 
               <p><label for="phoneNum" id="phoneNum-label">Phone:</label>
-              <input id="phoneNum"  placeholder="617 919 1032" required></input></p>
+              <input id="phoneNum"  name = "phoneNum" placeholder="617 919 1032"></input><div id="errPhone" class="errMsg">Phone is required</div></p>
 
               <p><label for="dropdown" id="amount">Inquiry Type:</label>
               <select id="dropdown">
@@ -59,14 +59,52 @@
               </select></p>
 
               <p><label id="textarea">Message:</label>
-              <textarea id="textarea" name="extr comments" rows="5" class="textbox">
-              </textarea></p>
+              <textarea id="textarea" name="extr comments" name = "message" rows="5" class="textbox">
+              </textarea><div id="errMessage" class="errMsg">Message is required</div></p>
               <br>
 
               <input id="submit" type="submit" value="Submit" class="submit-button">
             </form>
         </div>
       <div class="footer">&copy; 2021 Global Food Bank is a 501(c)(3) non-profit organization.</div>
+      <script language = "javascript">
+        function validate() {
+          err = false;
+          document.getElementById("errName").style.display = "none";
+          document.getElementById("errEmail").style.display = "none";
+          document.getElementById("errPhone").style.display = "none";
+          document.getElementById("errMessage").style.display = "none";
+          with (document.contact)
+          {
+            if (name.value=="")
+            {
+              document.getElementById("errName").style.display = "inline-block";
+              name.focus();
+              err=true;
+            }
+            if (email.value=="")
+            {
+              document.getElementById("errEmail").style.display = "inline-block";
+              email.focus();
+              err=true;
+            }
+            if (phone.value=="")
+            {
+              document.getElementById("errPhone").style.display = "inline-block";
+              phone.focus();
+              err=true;
+            }
+            if (message.value=="")
+            {
+              document.getElementById("errMessage").style.display = "inline-block";
+              message.focus();
+              err=true;
+            }
+          }
+          
+          return !err;
+        }
+      </script>
 <style>
 
 h1 {
@@ -111,6 +149,12 @@ form {
 input.submit-button {
   width: 100%;
   padding: 0.75rem;
+}
+.errMsg {
+  color: #D20E11; 
+  border: solid 1px #d20e11; 
+  display:none;  
+  padding: 1px 15px;
 }
 
 </style>
