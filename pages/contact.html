@@ -78,30 +78,34 @@
           {
             if (name.value=="")
             {
+              console.log("name");
               document.getElementById("errName").style.display = "inline-block";
               name.focus();
               err=true;
             }
             if (email.value=="")
             {
+              console.log("email");
               document.getElementById("errEmail").style.display = "inline-block";
               email.focus();
               err=true;
             }
             if (phone.value=="")
             {
+              console.log("phone");
               document.getElementById("errPhone").style.display = "inline-block";
               phone.focus();
               err=true;
             }
             if (message.value=="")
             {
+              console.log("message");
               document.getElementById("errMessage").style.display = "inline-block";
               message.focus();
               err=true;
             }
           }
-          
+          if (err = true) console.log('ERR');
           return !err;
         }
       </script>
