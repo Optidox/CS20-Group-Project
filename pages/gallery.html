@@ -8,6 +8,34 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+        <style>
+            body {
+                text-align: center;
+            }
+            h1 {
+                background-image: url(../images/old-camera.jpg);
+                background-size: contain;
+                background-color: aliceblue;
+                color: white;
+                font-weight: 400;
+            }
+            @media only screen and (min-width: 1646px) {
+                img {
+                    display: inline-block;
+                    width: 49vw;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+            @media only screen and (max-width: 1646px) {
+                img {
+                    display: block;
+                    width: 98vw;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        </style>
     </head>
     <body>
         <nav id="content-desktop" class="topbar">
@@ -35,17 +63,13 @@
                 <a href="get_involved.html" class="bar-button">GET INVOLVED</a>
             </div>
         </nav>
+
         <br>
-        <br>
-        <!-- put captions for each image in gallery -->
-        <!-- display flex? Maybe put them vertically (will probably do this for responsive design) -->
-        <!-- I could also do 2 rows 3 columns -->
-        <img src = "../images/food_bank_img_1.jpeg">
-        <img src = "../images/food_bank_img_2.jpeg">
-        <img src = "../images/food_bank_img_3.jpeg">
-        <img src = "../images/food_bank_img_4.jpeg">
-        <img src = "../images/food_bank_img_5.jpeg">
-        <img src = "../images/food_bank_img_6.jpeg">
+        <h1 class="center under-nav">Gallery</h1>
+        <img class="left"  src = "../images/food_bank_img_1.jpeg">
+        <img class="right" src = "../images/food_bank_img_2.jpeg">
+        <img class="left"  src = "../images/food_bank_img_5.jpeg">
+        <img class="right above-footer" src = "../images/food_bank_img_6.jpeg">
 
         <div class="footer">&copy; 2021 Global Food Bank is a 501(c)(3) non-profit organization.</div>
     </body>
